@@ -1,0 +1,57 @@
+/* Réinitialisation des marges et paddings par défaut */
+body, h1, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style de base pour le conteneur */
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #ffe6e6; /* Fond rose */
+}
+
+/* Style pour l'en-tête */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style pour le GIF */
+.gif {
+    margin-bottom: 20px;
+}
+
+/* Style pour le conteneur des boutons */
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+/* Style pour les boutons */
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ff99cc; /* Rose plus clair pour les boutons */
+    color: white;
+    transition: transform 0.3s ease-in-out; /* Transition pour l'effet de survol */
+}
+
+/* Effet au survol des boutons */
+.btn:hover {
+    transform: scale(1.1);
+}
+
+/* Position absolue pour le bouton "No" */
+#nobutton {
+    position: absolute;
+    transition: top 0.5s ease-in-out, left 0.5s ease-in-out; /* Transition pour le mouvement */
+}
